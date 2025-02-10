@@ -13,6 +13,7 @@ public class Customer {
     private String lastName;
     private String email;
     private String phone;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;

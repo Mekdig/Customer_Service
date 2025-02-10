@@ -12,8 +12,8 @@ import org.zeetransportations.zeetransportations.service.CustomerService;
 @RequestMapping("/customers")
 public class CustomerController {
 
-@Autowired
-private CustomerService customerService;
+    @Autowired
+    private CustomerService customerService;
 
     @GetMapping("/get/{customerId}")
     public ResponseEntity<?> getCustomerInfo(@PathVariable(name = "customerId") int id){
